@@ -1,0 +1,47 @@
+*.log
+*.temp
+node_modules/
+.idea/
+build/
+
+Pipfile.lock
+yarn.lock
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# 配置
+env.py
+
+# 数据生成
+# script/
+
+*.pyc
+
+# celery
+celerybeat*
+
+
+# 数据库迁移文件
+*/migrations/00*.py
+
