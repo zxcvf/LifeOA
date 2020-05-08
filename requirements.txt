@@ -10,3 +10,4 @@ PyJWT==1.7.1
 requests
 django-bulk-update==2.2.0
 django_mysql==3.3.0
+drf_yasg
