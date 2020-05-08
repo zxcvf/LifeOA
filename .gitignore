@@ -45,3 +45,4 @@ celerybeat*
 # 数据库迁移文件
 */migrations/00*.py
 
+settings_local.py
