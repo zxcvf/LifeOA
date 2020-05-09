@@ -26,7 +26,7 @@ class UserModel(AbstractBaseUser):
     phone = models.BigIntegerField(unique=True, null=True, help_text='手机号')
     email = models.EmailField(unique=True, null=True, help_text='邮箱')
     gender = models.CharField(max_length=1, choices=GENDER_CHOICE, default='M', help_text='性别')
-    character = models.CharField(max_length=1, choices=CHARACTER_CHOICE, default='T', help_text='账号类型')
+    character = models.CharField(max_length=1, choices=CHARACTER_CHOICE, default='U', help_text='账号类型')
     objects = UserManager()
 
     class Meta:

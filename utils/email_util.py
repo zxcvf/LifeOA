@@ -16,10 +16,10 @@ def _format_address(s):
 
 
 class EmailHelper:
-    from_address = settings.EMAIL
+    from_address = settings.EMAIL_HOST
     password = settings.EMAIL_PWD
     smtp_server = settings.EMAIL_SERVER
-    smtp_server_host = settings.EMAIL_HOST  # default 25
+    smtp_server_host = settings.EMAIL_PORT  # default 25
 
     def __init__(self):
         self.msg = MIMEText('', 'plain', 'utf-8')

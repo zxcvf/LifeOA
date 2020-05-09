@@ -16,6 +16,7 @@ class Command(BaseCommand):
             email='673554003@qq.com',
             gender=GENDER_MALE,
             password=hashers.make_password('123456'),
+            character='A'
         )
         admin.save()
         self.stdout.write(self.style.SUCCESS('添加Admin帐号成功'))

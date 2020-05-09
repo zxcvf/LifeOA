@@ -67,7 +67,6 @@ class AuthViewSet(GenericViewSet, ):
     @action(methods=['POST'], detail=False)
     def forgot(self, request, *args, **kwargs):
         """ 根据邮件验证码重置密码 """
-        """ 发送重置密码邮件 """
         serializer = UpdatePwdSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.reset()

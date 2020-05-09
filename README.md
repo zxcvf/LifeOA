@@ -32,10 +32,11 @@ META_MSG = {
     'powered-by': 'life.li'
 }
 
-EMAIL = ''  # 发送邮件配置项
+EMAIL_HOST = ''  # 发送邮件配置项
 EMAIL_PWD = ''
 EMAIL_SERVER = ''
-EMAIL_HOST = ''
+EMAIL_PORT = ''
+
 
 REDIS = ''  # celery使用的redis连接
 ```
