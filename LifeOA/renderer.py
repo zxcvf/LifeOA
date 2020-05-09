@@ -8,7 +8,7 @@ class CustomJSONRenderer(JSONRenderer):
     def render(self, data, accepted_media_type=None, renderer_context=None):
         wrapped_data = {
             'status': 'success',
-            'code': 2000,
+            'code': 200,
             'data': data,
             'message': '',
             'meta': settings.META_MSG

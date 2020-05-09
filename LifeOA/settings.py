@@ -156,3 +156,13 @@ SWAGGER_SETTINGS = {
         'drf_yasg.inspectors.CoreAPICompatInspector',
     ],
 }
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': REDIS,  # 本地测试ls
+        'OPTIONS': {
+            "CONNECTION_POOL_KWARGS": {'max_connections': 100}
+        }
+    }
+}

@@ -31,4 +31,21 @@ META_MSG = {
     'version': 'v0.0.1',
     'powered-by': 'life.li'
 }
+
+EMAIL = ''  # 发送邮件配置项
+EMAIL_PWD = ''
+EMAIL_SERVER = ''
+EMAIL_HOST = ''
+
+REDIS = ''  # celery使用的redis连接
 ```
+
+
+本地启动服务
+
+`python manage.py runserver`
+
+本地启动celery
+
+`celery -A LifeOA worker -l info --pool=solo`
+
