@@ -5,7 +5,7 @@
 > by django-rest-framework 
 
 
-
+API接口文档 {host}/swagger/
 
 `LifeOA/settings_local.py`
 ``` 
